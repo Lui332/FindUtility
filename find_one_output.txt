@@ -1,0 +1,34 @@
+
+PART 1: find where-to-look
+
+--- COMMAND: find testdir
+
+testdir/dir1
+testdir/dir1/dir2
+testdir/dir1/dir2/test6
+testdir/dir1/dir2/test5
+testdir/dir1/test3
+testdir/dir1/test4
+testdir/dir1/.DS_Store
+testdir/test1
+testdir/dir3
+testdir/dir3/test7
+testdir/dir3/test8
+testdir/.DS_Store
+testdir/test2
+
+--- COMMAND: find testdir/dir1
+
+testdir/dir1/dir2
+testdir/dir1/dir2/test6
+testdir/dir1/dir2/test5
+testdir/dir1/test3
+testdir/dir1/test4
+testdir/dir1/.DS_Store
+
+--- COMMAND: find testdir/dir3
+
+testdir/dir3/test7
+testdir/dir3/test8
+
+
