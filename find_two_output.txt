@@ -1,0 +1,68 @@
+
+PART 2: find where-to-look criteria
+
+--- COMMAND: find -n test7 
+
+./testdir/dir3/test7
+
+--- COMMAND: find -n dir3 
+
+./testdir/dir3
+
+--- COMMAND: find -m -5 
+
+./find_two_output.txt
+./find_one_output.txt
+./find_one.exe
+./find_two.exe
+./find_three.exe
+./a.out
+
+--- COMMAND: li -i 
+
+62522477 a.out
+62522481 find_one.c
+62522482 find_one.exe
+62522487 find_one_output.txt
+62522490 find_three.c
+62523185 find_three.exe
+62522483 find_three_output.txt
+62522489 find_two.c
+62523183 find_two.exe
+62522485 find_two_output.txt
+62522479 local_script.sh
+62522480 Makefile
+62522491 server_script.sh
+62522492 testdir
+
+--- COMMAND: find -i 62522480
+
+./Makefile
+
+--- COMMAND: find -i 62523151
+
+./testdir/dir1/dir2
+
+--- COMMAND: find -w testdir -n test1 -i 44062919
+
+
+--- COMMAND: find -w testdir -i 62522493
+
+testdir/test1
+
+--- COMMAND: find -w testdir -m +10
+
+testdir/dir1
+testdir/dir1/dir2/test6
+testdir/dir1/dir2/test5
+testdir/dir1/test3
+testdir/dir1/test4
+testdir/dir1/.DS_Store
+testdir/test1
+testdir/dir3
+testdir/dir3/test7
+testdir/dir3/test8
+testdir/.DS_Store
+testdir/test2
+
+
