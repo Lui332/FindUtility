@@ -1,0 +1,55 @@
+
+PART 3: find where-to-look criteria -delete
+
+--- COMMAND: touch exampleFile 
+
+
+--- COMMAND: ls 
+
+a.out
+exampleFile
+find_one.c
+find_one.exe
+find_one_output.txt
+find_three.c
+find_three.exe
+find_three_output.txt
+find_two.c
+find_two.exe
+find_two_output.txt
+local_script.sh
+Makefile
+server_script.sh
+testdir
+
+--- COMMAND: find -n exampleFile -a delete 
+
+DELETED:  ./exampleFile
+
+--- COMMAND: ls 
+
+a.out
+find_one.c
+find_one.exe
+find_one_output.txt
+find_three.c
+find_three.exe
+find_three_output.txt
+find_two.c
+find_two.exe
+find_two_output.txt
+local_script.sh
+Makefile
+server_script.sh
+testdir
+
+--- COMMAND: touch exampleFile testdir/exampleFile testdir/dir1/dir2/exampleFile 
+
+
+--- COMMAND: find -n exampleFile -a delete 
+
+DELETED:  ./exampleFile
+DELETED:  ./testdir/dir1/dir2/exampleFile
+DELETED:  ./testdir/exampleFile
+
+
