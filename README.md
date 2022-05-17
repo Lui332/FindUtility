@@ -1,2 +1,2 @@
 # FindUtility
-Simplified version of the 'fingd' command on Linux/Unix like systems
+Simplified version of the 'find' command on Linux/Unix like systems
